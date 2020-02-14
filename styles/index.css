@@ -1,0 +1,159 @@
+footer {
+    background-color: #44494d;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.active {
+    border: 1px solid #ff0000 !important;
+}
+
+#filter {
+    position: relative;
+    display: inline-block;
+    border-width: 1px 1px 1px 1px;
+    border-color: #43494d;
+    border-style: solid;
+    border-radius: 6%;
+    padding: 5px 4px 5px 4px;
+    color: #43494d;
+    cursor: pointer;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 5;
+}
+
+#filter:hover .drop-content {
+    display: block;
+    margin-top: 8px;
+    margin-left: -6px;
+}
+
+.drop-content p {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+}
+
+.drop-content p:hover {
+    background-color: #e9ecef;
+}
+
+.selected {
+    background-color: #434343 !important;
+}
+
+@media (max-width: 575px) {
+    #filter {
+        top: 74px;
+        left: 100px;
+    }
+}
+
+.card {
+    color: #434343;
+}
+
+#prev:hover {
+    cursor: pointer;
+}
+
+#next:hover {
+    cursor: pointer;
+}
+
+#page_num[type="text"] {
+    width: 30px;
+    height: 24px;
+    text-align: center;
+}
+
+.page_c {
+    font-size: 18px;
+}
+
+.page_controls {
+    margin-bottom: 1em;
+}
+
+.drag {
+    position: relative;
+    left: 100px;
+    border: 4px dashed #aaa;
+    background-color: white;
+    width: 80%;
+    top: 42px;
+    height: 40%;
+    /*padding-left: 100px;*/
+    color: #aaa;
+    padding-left: 100px;
+}
+
+#fileUploader {
+    position: relative;
+    padding-top: 78px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    left: -100px;
+    top: -75px;
+}
+.upload {
+    position: absolute;
+    left: 180px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+    .drag {
+        left: 50px;
+        padding-left: 55px;
+    }
+    .upload {
+        left: 140px;
+    }
+}
+@media (max-width: 991px) {
+    .drag {
+        padding-left: 20px;
+    }
+    .upload {
+        left: 100px;
+    }
+}
+@media (max-width: 767px) {
+    .drag {
+        padding-left: 0px;
+        font-size: 14px;
+    }
+    .upload {
+        left: 65px;
+    }
+}
+@media (max-width: 575px) {
+    .drag {
+        padding-left: 50px;
+        font-size: 18px;
+        height: 60%;
+    }
+    .upload {
+        left: 155px;
+    }
+}
